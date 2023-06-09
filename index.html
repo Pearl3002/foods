@@ -23,7 +23,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li> 
+            <li><a href="#">Log-in/Sign-up</a></li>
         </ul>
     </header>
 
@@ -95,7 +96,9 @@
                 <span>$21.00</span>
                 <i class='bx bx-cart'></i>
             </div>
+             <a href="#" class="btn">See menu</a>
         </div>
+       
     </section>
 
     <!--services start-->
@@ -128,14 +131,37 @@
         </div>
     </section>
 
-    <!--call to action-->
-    <section class="cta">
-        <h2>We make quality food  <br> everyday</h2>
-        <a href="#" class="btn">Let's talk</a>
-    </section>
+    
+    
 
     <!--footer-->
+    
+    <!--call to action-->
     <section id="contact">
+        <section class="cta">
+            <h2>We make quality food  <br> everyday</h2>
+            <a href="#cta-container" class="btn" onclick="openpopup()" >Let's talk</a>
+
+
+           <div class="cta-container" >
+            <div class="box">
+                <div class="popup" id="popup">
+                    <img src="img/s4.png">
+                     <form onsubmit="sendEmail(); reset(); return false;">
+                        <h3>Make your inquiry</h3>
+                        <input type="text"  id="name" placeholder="Your Name" required>
+                        <input type="email"  id="email" placeholder="E-mail ID" required>
+                        <input type="text" id="phone" placeholder="Phone no." required>
+                        <textarea  id="message"rows="4" placeholder="How can we help you?"></textarea>
+                        <button class="btn" type="submit" onclick="closepopup()">Send</button>
+                    </form>
+                </div>
+                
+           
+     </div>
+        </section>
+     
+
         <div class="footer">
             <div class="main">
                 <div class="col">
@@ -191,6 +217,7 @@
 
     <!--Javascript-->
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
   </body>
