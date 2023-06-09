@@ -231,6 +231,95 @@ section{
     margin: 30px;
 }
 
+form {
+    background: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+  
+
+}
+
+form h3 {
+    color: #2b2640;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #9897a9;
+    font-size: var(--p-font);
+}
+
+form button{
+    padding: 15px;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    width: 50%;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+
+.popup {
+    width: 600px;
+    background:var(--text-color);
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px;
+    color: var(--main-color);
+    visibility: hidden;
+    transition: 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup h2 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    margin: 30px 0 10px;
+}
+.popup p {
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+.popup button {
+    width: 50%;
+    margin-top: 50px;
+    padding: 10px 0;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
 /*footer*/
 .main{
     display: flex;
