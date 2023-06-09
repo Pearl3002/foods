@@ -191,6 +191,13 @@ section{
     padding: 7px 10px;
     border-radius: 0 0.5rem 0 0.5rem;
 }
+.menu a {
+    cursor: pointer;
+    position: center;
+    border-radius: 30px;
+    margin: 20px auto 0;
+    margin-left: 45%;
+}
 
 
 /* services start*/
@@ -445,4 +452,6 @@ form button{
     .col{
         width: 100%;
     }
+    form {
+        width: 100%;
 }
