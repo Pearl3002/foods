@@ -237,7 +237,7 @@ form {
     flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 10px;
   
 
@@ -272,7 +272,7 @@ form button{
 
 
 .popup {
-    width: 600px;
+    width: 400px;
     background:var(--text-color);
     border-radius: 6px;
     position: absolute;
@@ -288,12 +288,6 @@ form button{
 .open-popup{
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
-}
-.popup img{
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .popup h2 {
