@@ -390,6 +390,24 @@ form button{
     color: var(--main-color);
 }
 
+footer {
+    background-color:var(--text-color);
+    padding: 20px 0;
+    text-align: center;
+    color: #1e1c2a;
+  }
+  
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+
+
 /*javascript*/
 
 @media (max-width: 1560px) {
