@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>full Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="boxicons.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+        
+  </head>
+  <body>
+    <header>
+        <a href="#" class="logo">FOODS</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li> 
+            <li><a href="login.html"><i class='bx bxs-user'></i></a></li>
+        </ul>
+    
+    </header>
+
+    
+
+
+
+
+       <!--Home Start-->
+
+    <section class="home" id="home">
+    <div class="home-text">
+        <h1>Website</h1>
+        <h2>Food The <br> Most precious things</h2>
+        <a href="#menu" class="btn">Today's menu</a>
+    </div>  
+    <div class="home-img">
+        <img src="img/home.png">
+    </div> 
+    </section>
+
+     <!--about start-->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about.png">
+        </div>
+        <div class="about-text">
+            <span>About us</span>
+            <h2>We speak the good <br> food language</h2>
+            <p>“Chekyns upon soppes” (basically chicken on cinnamon toast) from the 1545 early 
+            Tudor cookbook A Propre Newe Booke of Cokerye: Chekyns upon soppes</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        
+
+    </section>
+
+
+    <!--menu start-->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Food Menu</span>
+            <h2>Fresh taste and great price</h2>
+        </div>
+
+        <div class="menu-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/food1.png" alt="">
+                </div>
+                <h2>Wanton Noodles</h2>
+                <h3>Tasty food</h3>
+                <span>$11.00</span>
+                <i class='bx bx-cart'></i>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/food2.png" alt="">
+                </div>
+                <h2>Sea Food Noodles</h2>
+                <h3>Sea Fresh</h3>
+                <span>$16.00</span>
+                <i class='bx bx-cart'></i>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/food3.png" alt="">
+                </div>
+                <h2>Rice Noodles</h2>
+                <h3>Spicy food</h3>
+                <span>$21.00</span>
+                <i class='bx bx-cart'></i>
+            </div>
+           
+        </div>
+         <a href="menu.html" class="btn">See menu</a>
+    </section>
+
+    <!--services start-->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Services</span>
+            <h2>We provide best quality food</h2>
+        </div>
+
+        <div class="service-container">
+            <div class="s-box">
+                <img src="img/s1.png">
+                <h3>Order</h3>
+                <p>There are many variation of passages of lorem ipsum available but majority have suffered alteration injected humour</p>
+            </div>
+
+          
+
+            <div class="s-box">
+                <img src="img/s3.png">
+                <h3>Shipping</h3>
+                <p>There are many variation of passages of lorem ipsum available but majority have suffered alteration injected humour</p>
+            </div>
+
+              <div class="s-box">
+                <img src="img/s2.png">
+                <h3>Delivered</h3>
+                <p>There are many variation of passages of lorem ipsum available but majority have suffered alteration injected humour</p>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!--call to action-->
+    <section class="cta">
+            <h2>We make quality food  <br> everyday</h2>
+            <a href="#cta-container" class="btn" onclick="openpopup()" >Let's talk</a>
+
+
+           <div class="cta-container" >
+               <div class="box">
+                 <div class="popup" id="popup">
+                     <form name="submit-to-google-sheet" >
+                        <h3>Make your inquiry</h3>
+                        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="email" placeholder="E-mail ID" required>
+                        <input type="text" name="phone" id="phone" placeholder="Phone no." required>
+                        <textarea name="message" id="message"rows="4" placeholder="How can we help you?"></textarea>
+                        <button class="btn" type="submit" onclick="closepopup()">Send</button>
+                       </form>
+                 </div> 
+                  
+                </div>
+                
+             <span id="msg">hello!</span>
+           </div>
+        </section>
+    
+
+    <!--footer-->
+    
+   
+    <section id="contact">
+        
+     
+
+        <div class="footer">
+            <div class="main">
+                <div class="col">
+                    <h4>Menu links</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col">
+                    <h4>Our services</h4>
+                    <ul>
+                        <li><a href="">Web design</a></li>
+                        <li><a href="">Web development</a></li>
+                        <li><a href="">Marketing</a></li>
+                        <li><a href="">Product Management</a></li>
+                        <li><a href="">Graphic Designs</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Delivery Information</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Contact Us</h4>
+                    <div class="social">
+                        <a href=""><i class='bx bxl-youtube'></i></a>
+                        <a href=""><i class='bx bxl-instagram' ></i></a>
+                        <a href=""><i class='bx bxl-twitter' ></i></a>
+                        <a href=""><i class='bx bxl-whatsapp' ></i></a>
+                        <a href=""><i class='bx bxl-snapchat' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Javascript-->
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbzvsWaKnM3yk2FzxkOI6H01je-q6JE0eosZrh0gcNgfb1o4f2Uj_8qndRhxNb-NjOCRLA/exec>'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML =""
+        }, 4000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+    </script>
+ 
+
+
+  </body>
+
+
+
+</html>

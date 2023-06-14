@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log in/Sign up</title>
+
+  <link rel="stylesheet" type="text/css" href="login.css"/>
+  <link rel="stylesheet" href="boxicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">FOODS</a>
+<div class="bx bx-menu" id="menu-icon"></div>
+
+<ul class="navbar">
+    <li><a href="index.html"><i class='bx bx-chevron-left'></i>Go back home</a></li> 
+</ul>        
+</header>
+
+
+  <div class="login-container" id="loginContainer">
+    <div class="login-box">
+      <h2>FOODS</h2>
+      <form id="loginForm">
+        <label for="username">FOOD ID:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Login">
+      </form>
+      <p class="signup-text">Don't have an account?</p>
+      <a href="#signupButton" class="btn" type="submit" id="open-button">Sign-up</a>
+    </div>
+  </div>
+
+
+  <section class="content">
+    <div class="content">
+    <h1>Welcome to the foods!</h1>
+    <button onclick="showLogin()">Log In</button> 
+    
+
+  </div>
+  </section>
+  
+  
+  
+  
+  <!--signup-->
+ <div class="signupButton">
+  <div id="popup" class="popup">
+    <span class="close">&times;</span>
+    <h2>Sign Up</h2>
+    <form action="login.html" >
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <a href="index.html" class="btn" type="submit"></a>
+      
+    </form>
+  </div>
+ </div>
+  
+
+  <script src="login.js"></script>
+</body>
+</html>
